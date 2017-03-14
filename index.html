@@ -31,16 +31,16 @@
 		<input type="button" class="button" id="crafting" value="Crafting" onClick="screenChange(0)">
 		<input type="button" class="button" id="village" value="Village" onClick="screenChange(1)">
 		<input type="button" class="button" id="area" value="Area" onClick="screenChange(2)">
-		<input type="button" class="button" id="cave" value="cave" onClick="screenChange(3)">
+		<input type="button" class="button" id="cave" value="Cave" onClick="screenChange(3)">
 	</div>
 	<div id="screen" class="div">
 		<div id="buttons" class="div">
 		<!--crafting-->
 			<input type="button" class="button crafting" value="Start Fire" onclick="startFire()">
-			<input type="button" class="button crafting" value="Make traps" onClick="makeTrap()">
+			<input type="button" class="button crafting" value="Make Traps" onClick="makeTrap()">
 			<input type="button" class="button crafting" value="Check Traps" onClick="checkTraps()">
 			<input type="button" class="button crafting" value="Leather Armor" onClick="leather_armor()">
-			<input type="button" class="button crafting" value="iron Armor" onClick="iron_armor()">
+			<input type="button" class="button crafting" value="Iron Armor" onClick="iron_armor()">
 			<input type="button" class="button crafting" value="Diamond Armor" onClick="diamond_armor()">
 			<input type="button" class="button crafting" value="Make Wooden Sword" onClick="woodSword()">
 			<input type="button" class="button crafting" value="Make Iron Sword" onClick="ironSword()">
@@ -52,7 +52,7 @@
 		<!--village-->
 			<input type="button" class="button village" value="Grab Wood" onclick="grabWood()">
 		
-			<input type="text" class="button village" value="Add iron miners" readonly>
+			<input type="text" class="button village" value="Hire Iron Miners" readonly>
 			<input type="button" class="button village" value="+1" onClick="iMiner(1)">
 			<input type="button" class="button village" value="-1" onClick="iMiner(-1)">
 		<!--area-->
@@ -91,12 +91,10 @@
 							<div id="enemy"></div>
 					</div>
 				</div>
-				<div id="huntingButtons">
-					<input type="button" class="button hunting" id="1" value="Melee Attack" onClick="attackM()">
-					<input type="button" class="button hunting" id="2" value="Ranged Attack" onClick="attackR()">
-					<input type="button" class="button hunting" id="3" value="Hide" onClick="hide()">
-					<input type="button" class="button hunting" id="4" value="Run" onClick="run()">
-				</div>
+				<input type="button" class="button hunting" id="1" value="Melee Attack" onClick="attackM()">
+				<input type="button" class="button hunting" id="2" value="Ranged Attack" onClick="attackR()">
+				<input type="button" class="button hunting" id="3" value="Hide" onClick="hide()">
+				<input type="button" class="button hunting" id="4" value="Run" onClick="run()">
 			</div>
 		<!--cave-->
 			<input type="button" class="button cave" value="Mine" onclick="screenChange(4)">

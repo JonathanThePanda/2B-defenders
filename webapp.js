@@ -47,7 +47,7 @@ function leather_armor() {
 			armor="leather";
 			document.getElementById("armor").value= "armor = " + armor;	
 		}else {
-			c_text("You dont have enough leather to make armor...", 1);	
+			c_text("You don't have enough leather to make armor...", 1);	
 		}
 }
 
@@ -57,7 +57,7 @@ function iron_armor() {
 			armor="iron";
 			document.getElementById("armor").value= "armor = " + armor;	
 		}else {
-			c_text("You dont have enough iron to make armor...", 1);
+			c_text("You don't have enough iron to make armor...", 1);
 		}
 }
 
@@ -67,7 +67,7 @@ function diamond_armor() {
 			diamonds -= 50;
 			document.getElementById("armor").value= "armor = " + armor;	
 		}else {
-			c_text("You dont have enough diamonds to make armor...", 1);
+			c_text("You don't have enough diamonds to make armor...", 1);
 		}
 }
 /*
@@ -84,7 +84,7 @@ function ironSword() {
 		if(iron >= 10 && leather >= 5) {
 				iron -= 10;
 				leather -= 5;
-				c_text("You made a iron sword", 1);
+				c_text("You made an iron sword", 1);
 				weapon = "iron_sword";
 				document.getElementById("weapon").value="weapon =" + weapon;
 		}
@@ -247,7 +247,7 @@ switch(chooseNum) {
 	case 10: 
 				var fourthCase = confirm("Would you like to trade 1000 wood for 1 diamond?");
 				if(fourthCase === false){
-					c_text("FINE DON'T TRADE! I DONT CARE!", 1);
+					c_text("FINE DON'T TRADE! I DON'T CARE!", 1);
 					break;
 				}
 					if(fourthCase && wood >= 1000 ) {
@@ -265,7 +265,7 @@ switch(chooseNum) {
 	
 			   var fifthCase = confirm("Would you like to trade 50 leather for 5 gems?");
 			   if(fifthCase === false){
-					c_text("FINE DON'T TRADE! I DONT CARE!", 1);
+					c_text("FINE DON'T TRADE! I DON'T CARE!", 1);
 					break;
 				}
 			   	if(fifthCase && leather >= 50) {
@@ -299,7 +299,7 @@ function makePickaxe() {
 			c_text("You have made a pickaxe", 1);
 			
 		}else {
-			c_text("YOU DONT HAVE ENOUGH WOOD AND LEATHER", 1);
+			c_text("YOU DON'T HAVE ENOUGH WOOD AND LEATHER", 1);
 		
 		}
 }
@@ -309,7 +309,7 @@ function mining() {
 			
 		}
 		else {
-			c_text("YOU AINT HAVE NO PICKAXES BOI", 1);
+			c_text("YOU AIN'T HAVE NO PICKAXES BOI", 1);
 		}
 }
 
@@ -338,7 +338,7 @@ function get_diamond() {
 		c_text("You mined 1 diamond", 1);
 		
 	}else if(pick_durab<=5 && pick_durab !==0) {
-			c_text("YOUR PICKAXE AINT ABLE TO MINE DIAMOND", 1);
+			c_text("YOUR PICKAXE AIN'T ABLE TO MINE DIAMOND", 1);
 	}
 		
 	else {
@@ -366,7 +366,7 @@ function makeHouse() {
 }
 
 function update() {
-		c_text("You need a fire or you will die. If you dont make a fire in the next " + countdownFire + " seconds you will get hypothermia and die", 2);
+		c_text("You need a fire or you will die. If you don't make a fire in the next " + countdownFire + " seconds you will get hypothermia and die.", 2);
 		window.setInterval(countdownFire-=1, 1000);
 }
 
@@ -392,7 +392,7 @@ function die() {
 
 function needFire() {
 		if(fire===0) {
-		c_text("You need a fire or you will die. If you dont make a fire in the next " + countdownFire + " seconds you will get hypothermia and die", 2);
+		c_text("You need a fire or you will die. If you don't make a fire in the next " + countdownFire + " seconds you will get hypothermia and die.", 2);
 		window.setInterval(countdownFire-=1, 1000);
 			if(countdownFire===0){
 				hypo = 1;
@@ -533,7 +533,7 @@ function screenChange(id){
 						$('.mine').show(10);
 						break;
 				}else{
-						c_text("YOU AINT HAVE NO PICKAXES BOI", 1);
+						c_text("YOU AIN'T HAVE NO PICKAXES BOI", 1);
 						break;
 				}
 				break;
